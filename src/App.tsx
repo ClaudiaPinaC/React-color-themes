@@ -46,18 +46,23 @@ function App() {
   const [counter, setCounter] = useState(0);
 
   return (
-    <>
-      <h1>Select Your Theme</h1>
-      <div className="card">
-        {/* <button onClick={toggleTheme}>
-          What's your vibe today?
-        </button> */}
+    <div>
+      <div className='flex gap-4'>
         <button onClick={() => setCounter(counter + 1)}>
-          Click Here! <br />
+          Click Here!
+        </button>
+        <button onClick={() => setCounter(0)}>
+          Reset Counter
         </button>
         <div>Total clicks: {counter}</div>
       </div>
-    </>
+      <h1>Select Your Theme</h1>
+      <div className="card">
+        <button>
+          What's your vibe today?
+        </button>
+      </div>
+    </div>
   );
 }
 
