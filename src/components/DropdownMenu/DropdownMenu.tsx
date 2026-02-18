@@ -10,9 +10,10 @@ export const DropdownMenu: React.FC<DropdownMenuProps> = ({ isOpen, onClose, chi
     if (!isOpen) return null;
 
     return (
-        <div className="dropdown-menu" onClick={onClose}>
-            <ul className="dropdown-menu-list">
+        <div className="" onClick={onClose}>
+            <ul className="">
                 {children}
+                HELLO!
             </ul>
         </div>
     );
