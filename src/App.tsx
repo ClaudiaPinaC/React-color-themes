@@ -11,7 +11,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className='w-auto flex flex-col gap-5'>
 
       <div className='w-100 flex justify-center'>
         <div className='flex flex-col w-40 gap-4 content-center justify-center'>
@@ -26,15 +26,15 @@ function App() {
       </div>
 
       <h1>Select Your Theme</h1>
-      <div className="card">
+      <div className="relative inline-block">
         <button onClick={toggleMenu}>
           What's your vibe today?
         </button>
-      </div>
-
-      {isOpen && (
+        {isOpen && (
         <DropdownMenu isOpen={isOpen} onClose={toggleMenu}/>
       )}
+      </div>
+
     </div>
   );
 }
